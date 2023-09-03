@@ -26,7 +26,7 @@ jobs:
     - name: sleep
       run: sleep 50s
     - name: docker prune
-      run: docker system prune -a -f --volumes
+      run: sudo docker system prune -a -f --volumes
   ip-10-0-0-105-1:
     timeout-minutes: 10
     name: Remove label on ip-10-0-0-105-1
@@ -48,7 +48,7 @@ jobs:
     - name: sleep
       run: sleep 20s
     - name: docker prune
-      run: docker system prune -a -f --volumes
+      run: sudo docker system prune -a -f --volumes
   # clean_ip-10-0-0-249-1:
   #   timeout-minutes: 10
   #   name: ip-10-0-0-249-1
