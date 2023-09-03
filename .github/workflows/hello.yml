@@ -33,7 +33,7 @@ jobs:
       run: echo "hello world-OSS2"
     - name: sleep
       run: sleep 50s
-  clean_workdirs:
+  clean_workdirs-3:
     timeout-minutes: 10
     name: cleanup-3
     runs-on: OSS2
