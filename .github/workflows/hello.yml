@@ -1,0 +1,88 @@
+
+
+name: Gh-Runner setup
+
+
+on: [push]
+
+jobs:
+  clean_workdirs:
+    timeout-minutes: 10
+    name: cleanup
+    runs-on: OSS2
+    steps:
+    - name: echo
+      run: echo "hello world-OSS2"
+    - name: sleep
+      run: sleep 50s
+  clean_workdirs-1:
+    timeout-minutes: 10
+    name: cleanup-1
+    runs-on: OSS2
+    steps:
+    - name: echo
+      run: echo "hello world-OSS2"
+    - name: sleep
+      run: sleep 50s
+  clean_workdirs-2:
+    timeout-minutes: 10
+    name: cleanup-2
+    runs-on: OSS2
+    steps:
+    - name: echo
+      run: echo "hello world-OSS2"
+    - name: sleep
+      run: sleep 50s
+  clean_workdirs:
+    timeout-minutes: 10
+    name: cleanup-3
+    runs-on: OSS2
+    steps:
+    - name: echo
+      run: echo "hello world-OSS2"
+    - name: sleep
+      run: sleep 50s
+  clean_ip-10-0-0-249-1:
+    timeout-minutes: 10
+    name: ip-10-0-0-249-1
+    runs-on: ip-10-0-0-249
+    steps:
+    - name: echo
+      run: echo "hello world - ip-10-0-0-249"
+    - name: sleep
+      run: sleep 50s
+    - name: sleep
+      run: sleep 50s
+  clean_ip-10-0-0-249-2:
+    timeout-minutes: 10
+    name: ip-10-0-0-249-2
+    runs-on: ip-10-0-0-249
+    steps:
+    - name: echo
+      run: echo "hello world - ip-10-0-0-249"
+    - name: sleep
+      run: sleep 50s
+    - name: sleep
+      run: sleep 50s
+  clean_ip-10-0-0-105-1:
+    timeout-minutes: 10
+    name: ip-10-0-0-105-1
+    runs-on: ip-10-0-0-105
+    steps:
+    - name: echo
+      run: echo "hello world - ip-10-0-0-105"
+    - name: sleep
+      run: sleep 50s
+    - name: sleep
+      run: sleep 50s
+  clean_ip-10-0-0-105-2:
+    timeout-minutes: 10
+    name: ip-10-0-0-105-2
+    runs-on: ip-10-0-0-105
+    steps:
+    - name: echo
+      run: echo "hello world - ip-10-0-0-105"
+    - name: sleep
+      run: sleep 50s
+    - name: sleep
+      run: sleep 50s
