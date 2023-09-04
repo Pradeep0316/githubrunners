@@ -14,7 +14,7 @@ jobs:
     - name: echo
       run: echo "ip-10-0-0-249"
     - name: sleep
-      run: sleep 10s 
+      run: sleep 50s
   ip-10-0-0-249-2:
     timeout-minutes: 10
     name: Remove label on ip-10-0-0-249-2
@@ -24,7 +24,7 @@ jobs:
     - name: echo
       run: echo "ip-10-0-0-249-2"
     - name: sleep
-      run: sleep 10s
+      run: sleep 50s
     - name: docker prune
       run: sudo docker system prune -a -f --volumes
   ip-10-0-0-105-1:
@@ -36,7 +36,7 @@ jobs:
     - name: echo
       run: echo "ip-10-0-0-105-2"
     - name: sleep
-      run: sleep 10s
+      run: sleep 50s
   ip-10-0-0-105-2:
     timeout-minutes: 10
     name: ip-10-0-0-105-2
@@ -46,7 +46,7 @@ jobs:
     - name: echo
       run: echo "ip-10-0-0-105-2"
     - name: sleep
-      run: sleep 10s
+      run: sleep 50s
     - name: docker prune
       run: sudo docker system prune -a -f --volumes
   # clean_ip-10-0-0-249-1:
