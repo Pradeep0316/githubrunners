@@ -19,7 +19,6 @@ jobs:
     timeout-minutes: 10
     name: Remove label on ip-10-0-0-249-2
     runs-on: ip-10-0-0-249
-    needs: ip-10-0-0-249-1
     steps:
     - name: echo
       run: echo "ip-10-0-0-249-2"
@@ -30,7 +29,6 @@ jobs:
   ip-10-0-0-105-1:
     timeout-minutes: 10
     name: Remove label on ip-10-0-0-105-1
-    needs: ip-10-0-0-249-2
     runs-on: ip-10-0-0-105
     steps:
     - name: echo
@@ -41,7 +39,6 @@ jobs:
     timeout-minutes: 10
     name: ip-10-0-0-105-2
     runs-on: ip-10-0-0-105
-    needs: ip-10-0-0-105-1
     steps:
     - name: echo
       run: echo "ip-10-0-0-105-2"
