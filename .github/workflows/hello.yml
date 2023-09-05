@@ -16,10 +16,11 @@ jobs:
          machinename=$(echo ${{ runner.name }} | rev | cut -c 3- | rev)
          echo $machinename
          pwd
-         echo ${GITHUB_WORKSPACE}
-         ls ${GITHUB_WORKSPACE}/
+         cat ${GITHUB_WORKSPACE}/scripts/docker_prune.sh
+         bash ${GITHUB_WORKSPACE}/scripts/cleanup.s
+         bash ${GITHUB_WORKSPACE}/scripts/cleanup.sh
     - name: sleep
-      run: sleep 10s
+      run: sleep 3s
   # ip-10-0-0-249-2:
   #   timeout-minutes: 10
   #   name: Remove label on ip-10-0-0-249-2
