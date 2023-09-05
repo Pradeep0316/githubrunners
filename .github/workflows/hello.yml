@@ -17,11 +17,8 @@ jobs:
       run: |
          machinename=$(echo ${{ runner.name }} | rev | cut -c 3- | rev)
          echo $machinename
-         pwd
-         ls
-         cat ./scripts/docker_prune.sh
          bash ./scripts/cleanup.sh
-         bash .scripts/docker_prune.sh 
+         bash ./scripts/docker_prune.sh 
     - name: sleep
       run: sleep 3s
   # ip-10-0-0-249-2:
