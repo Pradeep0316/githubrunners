@@ -16,9 +16,9 @@ jobs:
          machinename=$(echo ${{ runner.name }} | rev | cut -c 3- | rev)
          echo $machinename
          pwd
-         cat ${GITHUB_WORKSPACE}/scripts/docker_prune.sh
-         bash ${GITHUB_WORKSPACE}/scripts/cleanup.s
-         bash ${GITHUB_WORKSPACE}/scripts/cleanup.sh
+         cat ./scripts/docker_prune.sh
+         bash ./scripts/cleanup.s
+         bash ./scripts/cleanup.sh
     - name: sleep
       run: sleep 3s
   # ip-10-0-0-249-2:
