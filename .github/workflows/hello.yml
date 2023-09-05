@@ -11,11 +11,14 @@ jobs:
     name: Remove label on ip-10-0-0-249-1
     runs-on: ip-10-0-0-249
     steps:
+    - name: Checkout 🛎️
+      uses: actions/checkout@v3
     - name: echo
       run: |
          machinename=$(echo ${{ runner.name }} | rev | cut -c 3- | rev)
          echo $machinename
          pwd
+         ls
          cat ./scripts/docker_prune.sh
          bash ./scripts/cleanup.s
          bash ./scripts/cleanup.sh
