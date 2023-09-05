@@ -15,68 +15,70 @@ jobs:
       run: |
          machinename=$(echo ${{ runner.name }} | rev | cut -c 3- | rev)
          echo $machinename
+         pwd
+         ls
     - name: sleep
       run: sleep 10s
-  ip-10-0-0-249-2:
-    timeout-minutes: 10
-    name: Remove label on ip-10-0-0-249-2
-    runs-on: ip-10-0-0-249
-    steps:
-    - name: echo
-      run: echo "ip-10-0-0-249-2"
-    - name: sleep
-      run: sleep 10s
-  ip-10-0-0-105-1:
-    timeout-minutes: 10
-    name: Remove label on ip-10-0-0-105-1
-    runs-on: ip-10-0-0-105
-    steps:
-    - name: echo
-      run: echo "ip-10-0-0-105-2"
-    - name: sleep
-      run: sleep 10s
-  ip-10-0-0-105-2:
-    timeout-minutes: 10
-    name: ip-10-0-0-105-2
-    runs-on: ip-10-0-0-105
-    steps:
-    - name: echo
-      run: echo "ip-10-0-0-105-2"
-    - name: sleep
-      run: sleep 10s
-  clean_ip-10-0-0-249-3:
-    timeout-minutes: 10
-    name: ip-10-0-0-249-3
-    runs-on: ip-10-0-0-249
-    steps:
-    - name: echo
-      run: echo "hello world - ip-10-0-0-249"
-    - name: sleep
-      run: sleep 10s
-  clean_ip-10-0-0-249-2:
-    timeout-minutes: 10
-    name: ip-10-0-0-249-2
-    runs-on: ip-10-0-0-249
-    steps:
-    - name: echo
-      run: echo "hello world - ip-10-0-0-249"
-    - name: sleep
-      run: sleep 10s
-  clean_ip-10-0-0-105-1:
-    timeout-minutes: 10
-    name: ip-10-0-0-105-1
-    runs-on: ip-10-0-0-105
-    steps:
-    - name: echo
-      run: echo "hello world - ip-10-0-0-105"
-    - name: sleep
-      run: sleep 10s
-  clean_ip-10-0-0-105-2:
-    timeout-minutes: 10
-    name: ip-10-0-0-105-2
-    runs-on: ip-10-0-0-105
-    steps:
-    - name: echo
-      run: echo "hello world - ip-10-0-0-105"
-    - name: sleep
-      run: sleep 10s
+  # ip-10-0-0-249-2:
+  #   timeout-minutes: 10
+  #   name: Remove label on ip-10-0-0-249-2
+  #   runs-on: ip-10-0-0-249
+  #   steps:
+  #   - name: echo
+  #     run: echo "ip-10-0-0-249-2"
+  #   - name: sleep
+  #     run: sleep 10s
+  # ip-10-0-0-105-1:
+  #   timeout-minutes: 10
+  #   name: Remove label on ip-10-0-0-105-1
+  #   runs-on: ip-10-0-0-105
+  #   steps:
+  #   - name: echo
+  #     run: echo "ip-10-0-0-105-2"
+  #   - name: sleep
+  #     run: sleep 10s
+  # ip-10-0-0-105-2:
+  #   timeout-minutes: 10
+  #   name: ip-10-0-0-105-2
+  #   runs-on: ip-10-0-0-105
+  #   steps:
+  #   - name: echo
+  #     run: echo "ip-10-0-0-105-2"
+  #   - name: sleep
+  #     run: sleep 10s
+  # clean_ip-10-0-0-249-3:
+  #   timeout-minutes: 10
+  #   name: ip-10-0-0-249-3
+  #   runs-on: ip-10-0-0-249
+  #   steps:
+  #   - name: echo
+  #     run: echo "hello world - ip-10-0-0-249"
+  #   - name: sleep
+  #     run: sleep 10s
+  # clean_ip-10-0-0-249-2:
+  #   timeout-minutes: 10
+  #   name: ip-10-0-0-249-2
+  #   runs-on: ip-10-0-0-249
+  #   steps:
+  #   - name: echo
+  #     run: echo "hello world - ip-10-0-0-249"
+  #   - name: sleep
+  #     run: sleep 10s
+  # clean_ip-10-0-0-105-1:
+  #   timeout-minutes: 10
+  #   name: ip-10-0-0-105-1
+  #   runs-on: ip-10-0-0-105
+  #   steps:
+  #   - name: echo
+  #     run: echo "hello world - ip-10-0-0-105"
+  #   - name: sleep
+  #     run: sleep 10s
+  # clean_ip-10-0-0-105-2:
+  #   timeout-minutes: 10
+  #   name: ip-10-0-0-105-2
+  #   runs-on: ip-10-0-0-105
+  #   steps:
+  #   - name: echo
+  #     run: echo "hello world - ip-10-0-0-105"
+  #   - name: sleep
+  #     run: sleep 10s
