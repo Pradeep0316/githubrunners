@@ -16,7 +16,8 @@ jobs:
          machinename=$(echo ${{ runner.name }} | rev | cut -c 3- | rev)
          echo $machinename
          pwd
-         ls
+         echo ${GITHUB_WORKSPACE}
+         ls ${GITHUB_WORKSPACE}/
     - name: sleep
       run: sleep 10s
   # ip-10-0-0-249-2:
